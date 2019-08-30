@@ -9,6 +9,7 @@ def batch_badge_creator(attendees)
 end
 
 def assign_rooms(attendees)
-  attendees.collect do |name|
-    
+  attendees.collect do |room_assignments|
+    batch_badge_creator(room_assignments)
+  end
 end
